@@ -3,6 +3,8 @@ import { NextRequest, NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
 export async function POST(req: NextRequest) {
+
+
   const {
     comp_name,
     user_name,

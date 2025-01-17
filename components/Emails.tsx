@@ -117,7 +117,7 @@ const code = {
   fontFamily: 'HelveticaNeue-Bold',
   fontSize: '18px',
   fontWeight: 700,
-  lineHeight: '40px',
+  lineHeight: '12px',
   paddingBottom: '8px',
   paddingTop: '8px',
   margin: '0 auto',
