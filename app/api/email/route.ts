@@ -18,7 +18,7 @@ export async function POST(req: NextRequest) {
 
   const sendemail = new Resend(process.env.RESEND_API_KEY);
 
-  const mail = await sendemail.emails.send({
+  await sendemail.emails.send({
     from: 'sales@kwik2pos.com',
     to: cust_email,
     subject: 'Text email',
@@ -33,9 +33,7 @@ export async function POST(req: NextRequest) {
     }),
   });
 
-  if (mail) {
+
     return NextResponse.json({ success: true, message: `Email sent to ${cust_email}` });
-  } else {
-    return NextResponse.json({ success: true, message: 'An error occured' });
-  }
+
 }
