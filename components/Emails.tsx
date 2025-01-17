@@ -43,7 +43,7 @@ const Emails = ({
         </Section>
 
         <Text style={paragraph}>
-          Click on the link above to view the {type}
+          Click on the link above to view  {type}
         </Text>
       </Container>
     </Body>
